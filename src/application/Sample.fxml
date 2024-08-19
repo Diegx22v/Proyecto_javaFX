@@ -24,10 +24,10 @@
             
             <Text text="Bienvenidos a nuestra Aplicación :)" wrappingWidth="555.2000122070312" GridPane.columnIndex="0" GridPane.rowIndex="0">
             <font>
-               <Font name="Goudy Stout" size="35.0" />
+               <Font name="Goudy Stout" size="40.0" />
             </font>
             <fill>
-               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <RadialGradient centerX="0.9116022099447514" centerY="0.8056872037914692" cycleMethod="REPEAT" focusAngle="7.59" focusDistance="-0.6436781609195403" radius="0.3563218390804598">
                   <stops>
                      <Stop>
                         <color>
@@ -43,10 +43,26 @@
                </RadialGradient>
             </fill></Text>
             
-            <Text fill="#ff00e1" text="Hola!, esta es nuestra aplicacion de JavaFX para nuestro proyecto, aqui puedes revsisar informacion acerca de la Inteligencia Artificial y responder algunas preguntas con nuestra trivia, atento." wrappingWidth="360" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <Text text="Hola!, esta es nuestra aplicacion de JavaFX para nuestro proyecto, aqui puedes revsisar informacion acerca de la Inteligencia Artificial y responder algunas preguntas con nuestra trivia, atento." wrappingWidth="360" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
-            </font></Text>
+            </font>
+            <fill>
+               <RadialGradient centerX="1.0" centerY="1.0" cycleMethod="REPEAT" focusAngle="169.38" focusDistance="0.22988505747126453" radius="0.706896551724138">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.1723976582288742" green="0.6947368383407593" blue="0.6947368383407593" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.5462184548377991" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill></Text>
             
             <WebView fx:id="webView" maxHeight="458.0" maxWidth="547.0" minHeight="452.0" minWidth="537.0" prefHeight="452.0" prefWidth="537.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
             <GridPane.margin>
@@ -66,15 +82,15 @@
                <Image url="@delfos.png" />
             </image>
             <GridPane.margin>
-               <Insets bottom="60.0" right="30.0" />
+               <Insets bottom="90.0" right="30.0" />
             </GridPane.margin>
          </ImageView>
-         <Text layoutX="30.0" layoutY="497.0" text="Introduccion " textAlignment="CENTER" wrappingWidth="360" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <Text layoutX="30.0" layoutY="497.0" text="Introduccion " textAlignment="CENTER" wrappingWidth="453.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
             <font>
-               <Font name="Goudy Stout" size="23.0" />
+               <Font name="Goudy Stout" size="27.0" />
             </font>
             <fill>
-               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <RadialGradient centerX="0.6602209944751382" centerY="0.6421800947867299" cycleMethod="REPEAT" focusDistance="-0.5057471264367817" radius="0.4540229885057471">
                   <stops>
                      <Stop>
                         <color>
