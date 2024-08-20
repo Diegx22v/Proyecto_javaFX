@@ -23,6 +23,13 @@ public class SampleController {
     @FXML
     private CheckBox c2CheckBox;
     @FXML
+    private CheckBox d1CheckBox;
+    @FXML
+    private CheckBox d2CheckBox;
+    
+    
+    
+    @FXML
     private Button guardarButton;
 
     private boolean seleccionGuardada;
@@ -35,8 +42,13 @@ public class SampleController {
     
     @FXML
     private void guardarSeleccion() {
-        seleccionGuardada = a1CheckBox.isSelected();
-        JOptionPane.showMessageDialog(null,"Selección guardada: " + (seleccionGuardada ? "Opción a1 seleccionada" : "Opción a1 no seleccionada"));
+    	if (b1CheckBox.isSelected() || c1CheckBox.isSelected() || d1CheckBox.isSelected()){
+    		JOptionPane.showMessageDialog(null,"Opcion incorrecta");
+    	}else  	if(a1CheckBox.isSelected()){
+    		JOptionPane.showMessageDialog(null,"Opcion correcta");
+    	}else {
+    		JOptionPane.showMessageDialog(null, "No puede dejar vacio la pregunta uno");
+    	}        
     }
 
     public boolean getSeleccionGuardada() {

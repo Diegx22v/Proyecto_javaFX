@@ -17,9 +17,9 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1551.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1613.0" prefWidth="1644.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
     <content>
-        <GridPane hgap="20" prefHeight="1258.0" prefWidth="1354.0" styleClass="main-container" vgap="20">
+        <GridPane hgap="20" prefHeight="1640.0" prefWidth="1683.0" styleClass="main-container" vgap="20">
             <columnConstraints>
                 <ColumnConstraints percentWidth="45.0" />
                 <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" percentWidth="60.0" />
@@ -151,60 +151,90 @@
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
          </Text>
-         <CheckBox fx:id="a1CheckBox" mnemonicParsing="false" text="Opcion 1" textFill="#4d00ff" GridPane.rowIndex="7">
+         <CheckBox fx:id="a1CheckBox" mnemonicParsing="false" prefHeight="41.0" prefWidth="128.0" text="Opcion 1" textFill="#00ffa6" GridPane.rowIndex="7">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="20.0" />
+            </GridPane.margin>
          </CheckBox>
          <Text fill="#ff00e1" layoutX="10.0" layoutY="1035.0" text="&lt;&lt;&lt; Pregunta uno &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="6">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="10.0" top="10.0" />
+            </GridPane.margin>
          </Text>
-         <CheckBox layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Opcion 2" textFill="#4d00ff" GridPane.rowIndex="8">
+         <CheckBox fx:id="b1CheckBox" layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Opcion 2" textFill="#00ffa9" GridPane.rowIndex="8">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="10.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" text="Opcion 4" textFill="#4d00ff" GridPane.rowIndex="10">
+         <CheckBox fx:id="d1CheckBox" layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="248.0" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.rowIndex="10">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="20.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 3" textFill="#4d00ff" GridPane.rowIndex="9">
+         <CheckBox fx:id="c1CheckBox" layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="135.0" text="Opcion 3" textFill="#00ffa9" GridPane.rowIndex="9">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="10.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1204.0" mnemonicParsing="false" text="Opcion 1" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <CheckBox fx:id="a2CheckBox" layoutX="10.0" layoutY="1204.0" mnemonicParsing="false" text="Opcion 1" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="7">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="20.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1242.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Opcion 2" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <CheckBox fx:id="b2CheckBox" layoutX="10.0" layoutY="1242.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="142.0" text="Opcion 2" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="8">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets bottom="10.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1282.0" mnemonicParsing="false" text="Opcion 3" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <CheckBox fx:id="c2CheckBox" layoutX="10.0" layoutY="1282.0" mnemonicParsing="false" text="Opcion 3" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="9">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="10.0" />
+            </GridPane.margin>
          </CheckBox>
-         <CheckBox layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 4" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <CheckBox fx:id="d2CheckBox" layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 4 (valor null)" textFill="#00ffa9" GridPane.columnIndex="1" GridPane.rowIndex="10">
             <font>
-               <Font name="Bodoni MT Black" size="12.0" />
+               <Font name="Bodoni MT Black" size="20.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="20.0" />
+            </GridPane.margin>
          </CheckBox>
          <Text fill="#ff00e1" layoutX="10.0" layoutY="1179.0" text="&lt;&lt;&lt; Pregunta dos &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="6">
             <font>
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
          </Text>
-         <Button fx:id="guardarButton" onAction="#guardarSeleccion" mnemonicParsing="false" text="Responder" GridPane.rowIndex="10">
+         <Button fx:id="guardarButton" mnemonicParsing="false" onAction="#guardarSeleccion" text="Responder" GridPane.rowIndex="10">
             <GridPane.margin>
                <Insets top="70.0" />
             </GridPane.margin>
+            <padding>
+               <Insets top="2.0" />
+            </padding>
          </Button>
              <rowConstraints>
             <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
@@ -214,8 +244,8 @@
              <RowConstraints />
              <RowConstraints />
              <RowConstraints />
-             <RowConstraints maxHeight="18.399975585937455" minHeight="16.799999999999955" prefHeight="18.399975585937455" />
-              <RowConstraints maxHeight="48.799999999999955" minHeight="16.800097656250045" prefHeight="18.400073242187545" />
+             <RowConstraints maxHeight="38.0" minHeight="6.0" prefHeight="19.0" />
+              <RowConstraints maxHeight="48.799999999999955" minHeight="0.0" prefHeight="19.0" />
             <RowConstraints maxHeight="27.999951171874955" minHeight="0.0" prefHeight="19.999926757812545" />
             <RowConstraints maxHeight="24.0" minHeight="5.6000488281249545" prefHeight="21.599926757812455" />
             <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
