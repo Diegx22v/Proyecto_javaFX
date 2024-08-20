@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
 
 public class Main extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
     	
         Image icono = new Image(getClass().getResourceAsStream("6.png"));
         primaryStage.getIcons().add(icono);
@@ -19,7 +19,7 @@ public class Main extends Application {
 
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         
-        primaryStage.setTitle("JavaFX Application");
+        primaryStage.setTitle("Proyecto");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

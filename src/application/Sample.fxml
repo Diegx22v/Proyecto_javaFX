@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -14,9 +17,9 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1146.0" prefWidth="1340.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SampleController">
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="1551.0" prefWidth="1605.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
     <content>
-        <GridPane hgap="20" prefHeight="1144.0" prefWidth="1395.0" styleClass="main-container" vgap="20">
+        <GridPane hgap="20" prefHeight="1258.0" prefWidth="1354.0" styleClass="main-container" vgap="20">
             <columnConstraints>
                 <ColumnConstraints percentWidth="45.0" />
                 <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" percentWidth="60.0" />
@@ -41,7 +44,14 @@
                      </Stop>
                   </stops>
                </RadialGradient>
-            </fill></Text>
+            </fill>
+            <effect>
+               <DropShadow height="16.32" radius="7.66" spread="0.24" width="16.32">
+                  <color>
+                     <Color red="0.13177387416362762" green="0.6842105388641357" blue="0.33433398604393005" />
+                  </color>
+               </DropShadow>
+            </effect></Text>
             
             <Text text="Hola!, esta es nuestra aplicacion de JavaFX para nuestro proyecto, aqui puedes revsisar informacion acerca de la Inteligencia Artificial y responder algunas preguntas con nuestra trivia, atento." wrappingWidth="360" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <font>
@@ -141,7 +151,62 @@
                <Font name="Berlin Sans FB" size="19.0" />
             </font>
          </Text>
-         <rowConstraints>
+         <CheckBox fx:id="a1CheckBox" mnemonicParsing="false" text="Opcion 1" textFill="#4d00ff" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1035.0" text="&lt;&lt;&lt; Pregunta uno &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.rowIndex="6">
+            <font>
+               <Font name="Berlin Sans FB" size="19.0" />
+            </font>
+         </Text>
+         <CheckBox layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Opcion 2" textFill="#4d00ff" GridPane.rowIndex="8">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1101.0" mnemonicParsing="false" text="Opcion 4" textFill="#4d00ff" GridPane.rowIndex="10">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 3" textFill="#4d00ff" GridPane.rowIndex="9">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1204.0" mnemonicParsing="false" text="Opcion 1" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1242.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="100.0" text="Opcion 2" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1282.0" mnemonicParsing="false" text="Opcion 3" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <CheckBox layoutX="10.0" layoutY="1324.0" mnemonicParsing="false" text="Opcion 4" textFill="#4d00ff" GridPane.columnIndex="1" GridPane.rowIndex="10">
+            <font>
+               <Font name="Bodoni MT Black" size="12.0" />
+            </font>
+         </CheckBox>
+         <Text fill="#ff00e1" layoutX="10.0" layoutY="1179.0" text="&lt;&lt;&lt; Pregunta dos &gt;&gt;&gt;" wrappingWidth="358.3999938964844" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <font>
+               <Font name="Berlin Sans FB" size="19.0" />
+            </font>
+         </Text>
+         <Button fx:id="guardarButton" onAction="#guardarSeleccion" mnemonicParsing="false" text="Responder" GridPane.rowIndex="10">
+            <GridPane.margin>
+               <Insets top="70.0" />
+            </GridPane.margin>
+         </Button>
+             <rowConstraints>
             <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
             <RowConstraints />
             <RowConstraints />
@@ -149,8 +214,14 @@
              <RowConstraints />
              <RowConstraints />
              <RowConstraints />
-             <RowConstraints />
-             
+             <RowConstraints maxHeight="18.399975585937455" minHeight="16.799999999999955" prefHeight="18.399975585937455" />
+              <RowConstraints maxHeight="48.799999999999955" minHeight="16.800097656250045" prefHeight="18.400073242187545" />
+            <RowConstraints maxHeight="27.999951171874955" minHeight="0.0" prefHeight="19.999926757812545" />
+            <RowConstraints maxHeight="24.0" minHeight="5.6000488281249545" prefHeight="21.599926757812455" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
             <RowConstraints />
          </rowConstraints>
         </GridPane>
