@@ -3,6 +3,7 @@ module ejem {
 	requires javafx.fxml;
 	requires javafx.web;
 	requires javafx.graphics;
-	
-	opens application to javafx.graphics, javafx.fxml;
+	requires java.desktop;
+    opens application to javafx.fxml;
+    exports application;
 }
