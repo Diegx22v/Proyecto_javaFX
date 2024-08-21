@@ -17,16 +17,43 @@ public class SampleController {
     @FXML
     private CheckBox c1CheckBox;
     @FXML
+    private CheckBox d1CheckBox;
+    
+    @FXML
     private CheckBox a2CheckBox;
     @FXML
     private CheckBox b2CheckBox;
     @FXML
     private CheckBox c2CheckBox;
     @FXML
-    private CheckBox d1CheckBox;
-    @FXML
     private CheckBox d2CheckBox;
     
+    @FXML
+    private CheckBox a3CheckBox;
+    @FXML
+    private CheckBox b3CheckBox;
+    @FXML
+    private CheckBox c3CheckBox;
+    @FXML
+    private CheckBox d3CheckBox;
+    
+    @FXML
+    private CheckBox a4CheckBox;
+    @FXML
+    private CheckBox b4CheckBox;
+    @FXML
+    private CheckBox c4CheckBox;
+    @FXML
+    private CheckBox d4CheckBox;
+    
+    @FXML
+    private CheckBox a5CheckBox;
+    @FXML
+    private CheckBox b5CheckBox;
+    @FXML
+    private CheckBox c5CheckBox;
+    @FXML
+    private CheckBox d5CheckBox;
     
     
     @FXML
@@ -42,13 +69,55 @@ public class SampleController {
     
     @FXML
     private void guardarSeleccion() {
+    	String uno ;String dos;String tres; String cuatro; String cinco;
+    	int acierto=0;
     	if (b1CheckBox.isSelected() || c1CheckBox.isSelected() || d1CheckBox.isSelected()){
-    		JOptionPane.showMessageDialog(null,"Opcion incorrecta");
+    		uno="Opcion incorrecta";
     	}else  	if(a1CheckBox.isSelected()){
-    		JOptionPane.showMessageDialog(null,"Opcion correcta");
+    		uno="Opcion correcta";
+    		acierto=acierto+20;
     	}else {
-    		JOptionPane.showMessageDialog(null, "No puede dejar vacio la pregunta uno");
+    		uno= "No se puede dejar vacia la pregunta uno";
     	}        
+    	
+    	if (b2CheckBox.isSelected() || c2CheckBox.isSelected() || d2CheckBox.isSelected()){
+    		dos="Opcion incorrecta";
+    	}else  	if(a2CheckBox.isSelected()){
+    		dos="Opcion correcta";
+    		acierto=acierto+20;
+    	}else {
+    		dos= "No se puede dejar vacia la pregunta dos";
+    	}        
+    	
+    	if (b3CheckBox.isSelected() || c3CheckBox.isSelected() || d3CheckBox.isSelected()){
+    		tres="Opcion incorrecta";
+    	}else  	if(a3CheckBox.isSelected()){
+    		tres="Opcion correcta";
+    		acierto=acierto+20;
+    	}else {
+    		tres= "No se puede dejar vacia la pregunta tres";
+    	}        
+    	
+    	if (b4CheckBox.isSelected() || c4CheckBox.isSelected() || d4CheckBox.isSelected()){
+    		cuatro="Opcion incorrecta";
+    	}else  	if(a4CheckBox.isSelected()){
+    		cuatro="Opcion correcta";
+    		acierto=acierto+20;
+    	}else {
+    		cuatro= "No se puede dejar vacia la pregunta cuatro";
+    	}        
+    	
+    	if (b5CheckBox.isSelected() || c5CheckBox.isSelected() || d5CheckBox.isSelected()){
+    		cinco="Opcion incorrecta";
+    	}else  	if(a5CheckBox.isSelected()){
+    		cinco="Opcion correcta";
+    		acierto=acierto+20;
+    	}else {
+    		cinco= "No se puede dejar vacia la pregunta cinco";
+    	}        
+    	
+    	
+    	JOptionPane.showMessageDialog(null,"Pregunta uno:  "+uno+"\nPregunta dos:  "+dos+"\nPregunta tres:  "+tres+"\nPregunta cuatro:  "+cuatro+"\nPregunta cinco:  "+cinco+"\nResultado Total:  "+acierto+"%");
     }
 
     public boolean getSeleccionGuardada() {
